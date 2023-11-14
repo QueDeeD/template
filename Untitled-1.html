@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web component</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="card_info">
+        <div id="info">
+            <div><input type="text" id="photoInput" placeholder="Photo link" required></div>
+            <div><input type="text" id="nameInput" placeholder="Name" required></div>
+            <div><input type="text" id="emailInput" maxlength="40" placeholder="Email" required></div>
+            <div><input type="text" id="numberInput" maxlength="10" required placeholder="+7(ххх) ххх хх хх"></div>
+            <div><input type="submit" value="Submit"></div>
+        </div>
+    </form>
+    <div id="output"></div>
+    <template id="contact-card">
+        <div>
+            <p id="temp_name"></p>
+            <p id="temp_email"></p>
+            <p id="temp_number"></p>
+            <img id="temp_photo" width="200" height="150">
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
