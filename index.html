@@ -12,7 +12,7 @@
             <div><input type="text" id="photoInput" placeholder="Photo link" required></div>
             <div><input type="text" id="nameInput" placeholder="Name" required></div>
             <div><input type="text" id="emailInput" maxlength="40" placeholder="Email" required></div>
-            <div><input type="text" id="numberInput" maxlength="10" required placeholder="+7(ххх) ххх хх хх"></div>
+            <div><input type="text" id="numberInput" maxlength="10" required onkeypress ="return event.charCode>=48 && event.charCode<=57 && event.charCode==43" placeholder="+7(ххх) ххх хх хх"></div>
             <div><input type="submit" value="Submit"></div>
         </div>
     </form>
